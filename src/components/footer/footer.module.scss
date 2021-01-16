@@ -1,0 +1,46 @@
+.footercontainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.contacttext {
+  p {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 15px;
+  }
+}
+.socialcontainer {
+  a {
+    font-size: 25px;
+    &:hover {
+      cursor: pointer;
+      color: #16a6b6;
+    }
+  }
+}
+.credentials {
+  text-align: center;
+  padding-bottom: 30px;
+}
+p {
+  font-size: 60px;
+}
+
+.socialcontainer {
+  display: flex;
+  justify-content: center;
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: grey;
+    margin: 15px;
+    transition: 0.2s;
+  }
+  &:hover {
+    transition: 0.2s;
+    color: #16a6b6;
+  }
+}

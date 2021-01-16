@@ -1,0 +1,39 @@
+.tags {
+  text-align: left;
+  padding: 0 30px 30px 30px;
+}
+.greetings {
+  text-align: center;
+  margin: 15vh;
+  font-size: 60px;
+}
+span {
+  color: grey;
+}
+.tag {
+  outline: none;
+  border: none;
+  color: #979797;
+  margin: 0px 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.active {
+  color: #16a6b6;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  padding: 5px;
+}
+img {
+  margin: 5px;
+  width: 100%;
+  display: block;
+
+  flex-basis: 100%;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+}

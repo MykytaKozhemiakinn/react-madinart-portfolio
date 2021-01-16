@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import ContactMe from "./pages/ContactMe/ContactMe";
+import AboutMe from "./pages/AboutMe/AboutMe";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/footer";
+import { ToTopButton } from "./components/toTopButton/toTopButton.jsx";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    let title = window.location.pathname;
+    document.title = title;
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/aboutme" component={AboutMe} />
+        <Route path="/contactme" component={ContactMe} />
+      </Switch>
+      <Footer />
+      <ToTopButton />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

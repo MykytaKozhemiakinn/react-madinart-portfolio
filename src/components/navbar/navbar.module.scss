@@ -1,0 +1,55 @@
+.headerContainer {
+  font-size: 20px;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0 20px 15px;
+  @media screen and (max-width: 800px) {
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    width: 70px;
+    margin-top: 25px;
+    font-weight: 600;
+    @media screen and (max-width: 800px) {
+      width: 50px;
+      padding: 0;
+    }
+  }
+}
+.linksContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
+}
+a {
+  padding: 10px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+  &:hover {
+    transition: 0.2s;
+    color: #16a6b6;
+  }
+}
+.contactMe {
+  padding: 12px 13px;
+  font-size: 19px;
+  color: #fff;
+  background-color: #000;
+  transition: 0.6s;
+  &:hover {
+    color: white;
+    transition: 0.6s;
+    transform: scale(1.09);
+  }
+}
