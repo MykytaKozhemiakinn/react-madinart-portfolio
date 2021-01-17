@@ -33,7 +33,7 @@ const Footer = () => (
     </div>
     <div className="credentials">
       <p>
-        © 2019-2020 MadInArt Limited. All rights reserved. Built by Mykyta
+        © 2019-2021 MadInArt Limited. All rights reserved. Built by Mykyta
         Kozhemiakin.
       </p>
     </div>

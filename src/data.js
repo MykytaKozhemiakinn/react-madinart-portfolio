@@ -1,11 +1,9 @@
 export default [
-  { id: "1", imageName: "cc_11.jpg", tag: "Cartoon characters" },
   { id: "2", imageName: "сс_1.jpg", tag: "Cartoon characters" },
   { id: "3", imageName: "сс_2.jpg", tag: "Cartoon characters" },
   { id: "4", imageName: "сс_4.jpg", tag: "Cartoon characters" },
   { id: "5", imageName: "сс_5.jpg", tag: "Cartoon characters" },
   { id: "6", imageName: "сс_6.jpg", tag: "Cartoon characters" },
-  { id: "7", imageName: "сс_7.jpg", tag: "Cartoon characters" },
   { id: "8", imageName: "сс_8.jpg", tag: "Cartoon characters" },
   { id: "9", imageName: "сс_10.png", tag: "Cartoon characters" },
   { id: "10", imageName: "dp_1.jpg", tag: "Digital portraits" },
