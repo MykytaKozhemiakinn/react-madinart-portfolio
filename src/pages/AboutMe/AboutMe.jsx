@@ -11,6 +11,8 @@ import Substhexagon from "../../assets/hexagons/Substhexagon.png";
 import Zbrhexagon from "../../assets/hexagons/Zbrhexagon.png";
 
 const AboutMe = () => {
+  const path = document.location.pathname;
+  console.log(path)
   return (
     <DocumentTitle title="MadInArt | About">
       <div className={s.parent}>
@@ -59,9 +61,9 @@ const AboutMe = () => {
           <div className={s.tools}>
             <img src={AIhexagon} alt="AIhexagon" />
             <img src={Hexagon} alt="Hexagon" />
-            <img src={MAYAhexagon}  alt="MAYAhexagon"/>
+            <img src={MAYAhexagon} alt="MAYAhexagon" />
             <img src={Substhexagon} alt="Substhexagon" />
-            <img src={Zbrhexagon}  alt="Zbrhexagon"/>
+            <img src={Zbrhexagon} alt="Zbrhexagon" />
           </div>
         </div>
       </div>

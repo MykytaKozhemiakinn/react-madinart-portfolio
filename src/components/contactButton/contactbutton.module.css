@@ -1,0 +1,17 @@
+.contactMe {
+  padding: 12px 13px;
+  font-size: 19px;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.contactMe:hover {
+  color: white;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+/*# sourceMappingURL=contactbutton.module.css.map */

@@ -14,7 +14,8 @@ const Home = () => {
       ? setFilteredImages(images)
       : setFilteredImages(images.filter((image) => image.tag === tag));
   }, [tag]);
-
+  const path = document.location.pathname;
+  console.log(path);
   return (
     <DocumentTitle title="MadInArt | Home">
       <div className="App">
