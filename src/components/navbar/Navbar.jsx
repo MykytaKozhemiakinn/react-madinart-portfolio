@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import { Link } from "react-router-dom";
 import { ContactButton } from "./../contactButton/contactButton";
 import s from "./navbar.module.css";
@@ -18,4 +18,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default memo(Navbar);

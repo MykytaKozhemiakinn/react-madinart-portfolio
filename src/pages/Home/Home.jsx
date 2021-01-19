@@ -1,21 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 import DocumentTitle from "react-document-title";
-
+import { LoadingSpinner } from "../../components/loadingSpinner/loadingSpinner";
 import images from "../../data";
 import "./Home.css";
 
 const Home = () => {
   const [tag, setTag] = useState("All");
   const [filteredImages, setFilteredImages] = useState([]);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     tag === "All"
       ? setFilteredImages(images)
       : setFilteredImages(images.filter((image) => image.tag === tag));
   }, [tag]);
-  const path = document.location.pathname;
-  console.log(path);
+  useEffect(() => {
+    window.addEventListener("load", (e) => {
+      const image = document.querySelector("img");
+      const isLoaded = image.complete && image.naturalHeight !== 0;
+      console.log(isLoaded);
+      setLoaded(true);
+    });
+  });
+
   return (
     <DocumentTitle title="MadInArt | Home">
       <div className="App">
@@ -56,7 +64,10 @@ const Home = () => {
           />{" "}
         </div>
         <SRLWrapper>
-          <div className="container">
+          <div
+            className="container"
+            style={{ display: loaded ? "block" : "none" }}
+          >
             {filteredImages.map((image) => (
               <div key={image.id} className="image-card">
                 <a href={`/images/${image.imageName}`}>
@@ -69,6 +80,7 @@ const Home = () => {
               </div>
             ))}
           </div>
+          {!loaded && <LoadingSpinner />}
         </SRLWrapper>
       </div>
     </DocumentTitle>

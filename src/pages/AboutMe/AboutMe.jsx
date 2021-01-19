@@ -3,12 +3,12 @@ import DocumentTitle from "react-document-title";
 
 import s from "./aboutMe.module.css";
 
-import Avatar from "../../assets/AboutMePhoto.png";
-import AIhexagon from "../../assets/hexagons/AIhexagon.png";
-import Hexagon from "../../assets/hexagons/hexagon.png";
-import MAYAhexagon from "../../assets/hexagons/MAYAhexagon.png";
-import Substhexagon from "../../assets/hexagons/Substhexagon.png";
-import Zbrhexagon from "../../assets/hexagons/Zbrhexagon.png";
+import Avatar from "../../assets/AboutMePhoto.webp";
+import AIhexagon from "../../assets/hexagons/AIhexagon.webp";
+import Hexagon from "../../assets/hexagons/hexagon.webp";
+import MAYAhexagon from "../../assets/hexagons/MAYAhexagon.webp";
+import Substhexagon from "../../assets/hexagons/Substhexagon.webp";
+import Zbrhexagon from "../../assets/hexagons/Zbrhexagon.webp";
 
 const AboutMe = () => {
   const path = document.location.pathname;
