@@ -1,0 +1,15 @@
+.helloText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -20px;
+  .greetings {
+    text-align: center;
+    margin: 15vh;
+    font-size: 60px;
+    span {
+      color: grey;
+    }
+  }
+}

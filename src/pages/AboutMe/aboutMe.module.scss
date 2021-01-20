@@ -4,18 +4,16 @@
   align-items: center;
 }
 .helloText {
-  display: flex;
+  @include centered;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  padding: 110px 0 80px 0;
-  font-weight: 600;
-  span {
-    color: black;
-  }
-  .grey {
-    color: grey;
+  margin-top: -20px;
+  .greetings {
+    text-align: center;
+    margin: 15vh;
+    font-size: 60px;
+    span {
+      color: grey;
+    }
   }
 }
 
@@ -75,7 +73,7 @@
     @include centered;
   }
   hr {
-    width: 37.5vw;
+    width: 42%;
   }
   .tools {
     @include centered;

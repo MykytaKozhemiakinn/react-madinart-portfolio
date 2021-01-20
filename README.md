@@ -3,7 +3,7 @@
 A clean, beautiful and responsive portfolio for beginner digital artist who will famous all over the world thanks to her works.
 The project is still in development, so future updated are planned.
 
-## Used packages: 
+## Used packages:
 
 `react-router-dom` - responsible for creating SPA model and handling the routes.
 `firebase` - used for storing the data received from the contact form.
@@ -12,6 +12,8 @@ The project is still in development, so future updated are planned.
 `simple-react-lightbox` - customizable lightbox will help you to build a cool gallery.
 `sweetalert2` - easy to use and customize pop-up notification.
 `react-icons` - those sexy media icons.
+`react-spinners` - spinner on images loading.
+`react-animated-router` - amimation in routing.
 
 ## Available scripts:
 

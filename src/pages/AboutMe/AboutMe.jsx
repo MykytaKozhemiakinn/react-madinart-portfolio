@@ -2,7 +2,7 @@ import React from "react";
 import DocumentTitle from "react-document-title";
 
 import s from "./aboutMe.module.css";
-
+import { GreetingsText } from "../../components/greetingsText/greetingsText";
 import Avatar from "../../assets/AboutMePhoto.webp";
 import AIhexagon from "../../assets/hexagons/AIhexagon.webp";
 import Hexagon from "../../assets/hexagons/hexagon.webp";
@@ -12,16 +12,11 @@ import Zbrhexagon from "../../assets/hexagons/Zbrhexagon.webp";
 
 const AboutMe = () => {
   const path = document.location.pathname;
-  console.log(path)
+  console.log(path);
   return (
     <DocumentTitle title="MadInArt | About">
       <div className={s.parent}>
-        <div className={s.helloText}>
-          <span>
-            Hello, I’m a <span className={s.grey}>digital artist</span>, with
-          </span>
-          over 3 years of experience.
-        </div>
+        <GreetingsText />
         <div className={s.skillsAvatarContainer}>
           <div className={s.skills}>
             <p className={s.helloMessage}>

@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 import DocumentTitle from "react-document-title";
 import { LoadingSpinner } from "../../components/loadingSpinner/loadingSpinner";
-import images from "../../data";
+
+import {GreetingsText} from '../../components/greetingsText/greetingsText'
 import "./Home.css";
+import images from "../../data";
+
 
 const Home = () => {
   const [tag, setTag] = useState("All");
@@ -26,11 +29,8 @@ const Home = () => {
 
   return (
     <DocumentTitle title="MadInArt | Home">
-      <div className="App">
-        <p className="greetings">
-          Hello, I’m a <span>digital artist</span>, with over 3 years of
-          experience
-        </p>
+      <div className="App">    
+      <GreetingsText/>
         <div className="tags">
           <TagButton
             name="All"
