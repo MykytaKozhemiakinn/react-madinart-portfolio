@@ -3,18 +3,23 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  margin-top: 20px;
 }
 .contacttext {
   p {
     font-size: 60px;
-    line-height: 15px;
+    margin: 20px;
+    @media screen and (max-width: 920px) {
+      font-size: 30px;
+      margin: 0;
+    }
   }
 }
 .buttonContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin: 20px;
 }
 .socialcontainer {
   a {

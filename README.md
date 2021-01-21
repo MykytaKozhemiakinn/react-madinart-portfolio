@@ -1,7 +1,6 @@
 # Digital artist porfolio
 
 A clean, beautiful and responsive portfolio for beginner digital artist who will famous all over the world thanks to her works.
-The project is still in development, so future updated are planned.
 
 ## Used packages:
 

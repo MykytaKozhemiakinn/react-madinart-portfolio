@@ -35,7 +35,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    input, textarea {
+    input,
+    textarea {
       width: 900px;
     }
     button {
@@ -47,6 +48,12 @@
       background-color: #000;
       border: none;
     }
+    @media screen and (max-width: 920px) {
+      input,
+      textarea {
+        width: 300px;
+      }
+    }
   }
   .formInput {
     background-color: white;
@@ -54,7 +61,7 @@
     font-size: 15px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 70%;
+
     border: none;
     border-radius: 0;
     border-bottom: 1px solid grey;
@@ -62,6 +69,9 @@
     background: transparent;
     &:focus {
       outline: none;
+    }
+    @media screen and (max-width: 920px) {
+      width: 10%;
     }
   }
   .textAreaContainer {

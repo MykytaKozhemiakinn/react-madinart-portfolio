@@ -40,6 +40,21 @@
           flex: 1 1;
 }
 
+@media screen and (max-width: 920px) {
+  .skillsAvatarContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .skillsAvatarContainer ul {
   padding: 0;
   -webkit-box-orient: vertical;
@@ -64,8 +79,31 @@
   line-height: 26px;
 }
 
+@media screen and (max-width: 920px) {
+  .skillsAvatarContainer .skills {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
 .skillsAvatarContainer .helloMessage {
   width: 75%;
+}
+
+@media screen and (max-width: 920px) {
+  .skillsAvatarContainer .helloMessage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
 }
 
 .skillsAvatarContainer .my_skills {
@@ -75,11 +113,21 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px 0 15px 0;
   font-size: 17px;
 }
 
+@media screen and (max-width: 920px) {
+  .skillsAvatarContainer .my_skills {
+    padding: 0;
+  }
+}
+
 .skillsAvatarContainer p {
+  text-align: center;
   font-size: 17px;
 }
 
@@ -104,6 +152,21 @@
 
 .stats .stat {
   margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 920px) {
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .toolsContainer p {
@@ -143,5 +206,14 @@
   margin-top: 10px;
   -webkit-filter: drop-shadow(5px 5px 5px #222222);
   filter: drop-shadow(5px 5px 5px #222222);
+}
+
+@media screen and (max-width: 920px) {
+  .toolsContainer .tools {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=aboutMe.module.css.map */

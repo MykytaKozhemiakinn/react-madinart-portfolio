@@ -1,6 +1,9 @@
 .tags {
   text-align: left;
   margin: 0 30px 60px 30px;
+  @media screen and (max-width: 920px) {
+    margin-top: 10px;
+  }
 }
 .tag {
   outline: none;
@@ -20,6 +23,10 @@
   row-gap: 8px;
   column-count: 5;
   width: 97%;
+  @media screen and (max-width: 920px) {
+    column-count: 3;
+    margin-left: 0px;
+  }
 }
 .image {
   width: 100%;

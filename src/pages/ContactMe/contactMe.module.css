@@ -72,7 +72,8 @@
           flex-direction: column;
 }
 
-.mainContainer .formContainer input, .mainContainer .formContainer textarea {
+.mainContainer .formContainer input,
+.mainContainer .formContainer textarea {
   width: 900px;
 }
 
@@ -86,13 +87,19 @@
   border: none;
 }
 
+@media screen and (max-width: 920px) {
+  .mainContainer .formContainer input,
+  .mainContainer .formContainer textarea {
+    width: 300px;
+  }
+}
+
 .mainContainer .formInput {
   background-color: white;
   color: grey;
   font-size: 15px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 70%;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid grey;
@@ -102,6 +109,12 @@
 
 .mainContainer .formInput:focus {
   outline: none;
+}
+
+@media screen and (max-width: 920px) {
+  .mainContainer .formInput {
+    width: 10%;
+  }
 }
 
 .mainContainer .textAreaContainer {

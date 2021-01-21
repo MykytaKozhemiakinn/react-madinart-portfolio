@@ -11,8 +11,6 @@ import Substhexagon from "../../assets/hexagons/Substhexagon.webp";
 import Zbrhexagon from "../../assets/hexagons/Zbrhexagon.webp";
 
 const AboutMe = () => {
-  const path = document.location.pathname;
-  console.log(path);
   return (
     <DocumentTitle title="MadInArt | About">
       <div className={s.parent}>

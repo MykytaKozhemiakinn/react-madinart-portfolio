@@ -3,13 +3,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: -20px;
+  margin-top: 20px;
   .greetings {
-    text-align: center;
     margin: 15vh;
     font-size: 60px;
+    text-align: center;
     span {
       color: grey;
+    }
+    @media screen and (max-width: 920px) {
+      font-size: 30px;
+      margin-top: 10px;
+      line-height: 40px;
+      margin-bottom: 10px;
     }
   }
 }

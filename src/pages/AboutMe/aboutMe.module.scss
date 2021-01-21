@@ -20,6 +20,11 @@
 .skillsAvatarContainer {
   @include centered;
   flex: 1 1;
+  @media screen and (max-width: 920px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   ul {
     padding: 0;
     flex-direction: column;
@@ -36,17 +41,33 @@
     p {
       line-height: 26px;
     }
+    @media screen and (max-width: 920px) {
+      margin-top: 40px;
+      text-align: center;
+      margin-left: 0px;
+    }
   }
   .helloMessage {
     width: 75%;
+    @media screen and (max-width: 920px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
   }
   .my_skills {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 15px 0 15px 0;
     font-size: 17px;
+    @media screen and (max-width: 920px) {
+      padding: 0;
+    }
   }
   p {
+    text-align: center;
     font-size: 17px;
   }
 
@@ -67,6 +88,12 @@
   .stat {
     margin: 0 10px 0 0;
   }
+  @media screen and (max-width: 920px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 }
 .toolsContainer {
   p {
@@ -85,6 +112,9 @@
       margin-top: 10px;
       -webkit-filter: drop-shadow(5px 5px 5px #222222);
       filter: drop-shadow(5px 5px 5px #222222);
+    }
+    @media screen and (max-width: 920px) {
+      flex-direction: column;
     }
   }
 }

@@ -2,6 +2,13 @@
   text-align: left;
   margin: 0 30px 60px 30px;
 }
+
+@media screen and (max-width: 920px) {
+  .tags {
+    margin-top: 10px;
+  }
+}
+
 .tag {
   outline: none;
   border: none;
@@ -24,6 +31,14 @@
   -webkit-column-count: 5;
           column-count: 5;
   width: 97%;
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    -webkit-column-count: 3;
+            column-count: 3;
+    margin-left: 0px;
+  }
 }
 
 .image {

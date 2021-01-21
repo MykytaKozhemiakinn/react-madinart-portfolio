@@ -60,7 +60,8 @@ const ContactMe = memo(() => {
                 of your idea.
               </p>
               <p>
-                Please email to m8mur@mail.ru, or just speak your mind below.
+                Please email to <strong>m8mur@mail.ru</strong>, or just speak
+                your mind below.
               </p>
               <p>I usually respond within 4 hours.</p>
             </span>
