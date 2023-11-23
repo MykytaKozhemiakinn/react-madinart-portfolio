@@ -19,9 +19,9 @@ const ContactMe = memo(() => {
     if (email.length > 4 && message.length > 5) {
       db.collection("contactPageMadinart")
         .add({
-          name: name,
-          email: email,
-          message: message,
+          name,
+          email,
+          message,
         })
         .then(() => {
           setLoader(false);
@@ -60,7 +60,7 @@ const ContactMe = memo(() => {
                 of your idea.
               </p>
               <p>
-                Please email to <strong>m8mur@mail.ru</strong>, or just speak
+                Please email to <strong>madiinarts@gmail.com</strong>, or just speak
                 your mind below.
               </p>
               <p>I usually respond within 4 hours.</p>

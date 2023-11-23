@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaFacebookSquare, FaArtstation } from "react-icons/fa";
 import { Link, useRouteMatch } from "react-router-dom";
-import { ContactButton } from "./../contactButton/contactButton";
+import { ContactButton } from "../contactButton/contactButton";
 import s from "./footer.module.css";
 
 const Footer = () => {
@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
       <div className="credentials">
         <p>
-          © 2019-2021 MadInArt Limited. All rights reserved. Built by Mykyta
+          © 2019-2023 MadInArt Limited. All rights reserved. Built by Mykyta
           Kozhemiakin.
         </p>
       </div>

@@ -19,10 +19,9 @@ const Home = () => {
       : setFilteredImages(images.filter((image) => image.tag === tag));
   }, [tag]);
   useEffect(() => {
-    window.addEventListener("load", (e) => {
+    window.addEventListener("load", () => {
       const image = document.querySelector("img");
       const isLoaded = image.complete && image.naturalHeight !== 0;
-      console.log(isLoaded);
       setLoaded(true);
     });
   });
@@ -34,32 +33,32 @@ const Home = () => {
         <div className="tags">
           <TagButton
             name="All"
-            tagActive={tag === "All" ? true : false}
+            tagActive={tag === "All"}
             handleSetTag={setTag}
           />{" "}
           <TagButton
             name="Cartoon characters"
-            tagActive={tag === "Cartoon characters" ? true : false}
+            tagActive={tag === "Cartoon characters"}
             handleSetTag={setTag}
           />{" "}
           <TagButton
             name="Digital portraits"
-            tagActive={tag === "Digital portraits" ? true : false}
+            tagActive={tag === "Digital portraits"}
             handleSetTag={setTag}
           />{" "}
           <TagButton
             name="Vector portraits"
-            tagActive={tag === "Vector portraits" ? true : false}
+            tagActive={tag === "Vector portraits"}
             handleSetTag={setTag}
           />{" "}
           <TagButton
             name="Posters"
-            tagActive={tag === "Posters" ? true : false}
+            tagActive={tag === "Posters"}
             handleSetTag={setTag}
           />{" "}
           <TagButton
             name="Game design"
-            tagActive={tag === "Game design" ? true : false}
+            tagActive={tag === "Game design"}
             handleSetTag={setTag}
           />{" "}
         </div>
