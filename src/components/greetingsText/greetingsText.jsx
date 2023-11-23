@@ -4,7 +4,7 @@ import s from "./greetingsText.module.css";
 export const GreetingsText = () => (
   <div className={s.helloText}>
     <p className={s.greetings}>
-      Hello, I’m a <span>digital artist</span>, with over 3 years of experience.
+      Hello, my name is Madina. <span>Mad in arts </span>🤓
     </p>
   </div>
 );

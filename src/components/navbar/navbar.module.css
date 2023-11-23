@@ -13,7 +13,6 @@
 @media screen and (max-width: 920px) {
   .headerContainer {
     height: 60px;
-    margin-bottom: 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -33,7 +32,6 @@
 }
 
 .headerContainer .linksContainer {
-  width: 50%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
