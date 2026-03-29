@@ -87,7 +87,9 @@ const ContactMe = memo(() => {
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
             <div className={s.buttonContainer}>
-              <button type="submit">Send it</button>
+              <button type="submit" disabled={loader}>
+                {loader ? "Sending..." : "Send it"}
+              </button>
             </div>
           </form>
         </div>

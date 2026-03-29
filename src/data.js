@@ -1,4 +1,4 @@
-export default [
+const data = [
   { id: "2", imageName: "сс_1.webp", tag: "Cartoon characters" },
   { id: "3", imageName: "сс_2.webp", tag: "Cartoon characters" },
   { id: "4", imageName: "сс_4.webp", tag: "Cartoon characters" },
@@ -52,3 +52,5 @@ export default [
   { id: "54", imageName: "gdC_9.webp", tag: "Game design" },
   { id: "55", imageName: "gdC_93.webp", tag: "Game design" },
 ];
+
+export default data;
