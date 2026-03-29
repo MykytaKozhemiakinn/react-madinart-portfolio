@@ -38,7 +38,7 @@ const Footer = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/madina-murzakhmetova-a72612182/"
+          href="https://www.linkedin.com/in/madina-murzakhmetova/"
         >
           <FaLinkedin />
         </a>
